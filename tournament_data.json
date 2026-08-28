@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-28T23:14:14.270970",
+  "timestamp": "2026-08-28T23:16:17.924540",
   "source": "https://rk9.gg/pairings/WCS02wAQpCIaqFmXxER4",
   "mode": "html",
   "standings": [
@@ -102,16 +102,8 @@
   ],
   "recent_changes": {
     "new_players": [],
-    "updated_records": [
-      {
-        "name": "Patrick Cheng",
-        "old_record": "4-1-0",
-        "new_record": "4-2-0",
-        "old_points": 12,
-        "new_points": 12
-      }
-    ],
+    "updated_records": [],
     "rank_changes": [],
-    "timestamp": "2026-08-28T23:14:14.270866"
+    "timestamp": "2026-08-28T23:16:17.924435"
   }
 }
