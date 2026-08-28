@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-28T22:16:14.805562",
+  "timestamp": "2026-08-28T22:18:16.371030",
   "source": "https://rk9.gg/pairings/WCS02wAQpCIaqFmXxER4",
   "mode": "html",
   "standings": [
@@ -20,6 +20,22 @@
       "current_table": "167"
     },
     {
+      "name": "Patrick Cheng",
+      "country": "CA",
+      "wins": 4,
+      "losses": 1,
+      "ties": 0,
+      "points": 12,
+      "record": "4-1-0",
+      "placing": null,
+      "dropped": false,
+      "current_round": 5,
+      "bye": false,
+      "current_opponent": "Juan N\u00fa\u00f1ez Moreno",
+      "current_opponent_country": "ES",
+      "current_table": "179"
+    },
+    {
       "name": "Kylan Van Severen",
       "country": "CA",
       "wins": 3,
@@ -34,22 +50,6 @@
       "current_opponent": "Emilio Forbes",
       "current_opponent_country": "US",
       "current_table": "141"
-    },
-    {
-      "name": "Patrick Cheng",
-      "country": "CA",
-      "wins": 3,
-      "losses": 1,
-      "ties": 0,
-      "points": 9,
-      "record": "3-1-0",
-      "placing": null,
-      "dropped": false,
-      "current_round": 5,
-      "bye": false,
-      "current_opponent": "Juan N\u00fa\u00f1ez Moreno",
-      "current_opponent_country": "ES",
-      "current_table": "179"
     },
     {
       "name": "J\u00e9r\u00e9my C\u00f4t\u00e9",
@@ -118,8 +118,16 @@
   ],
   "recent_changes": {
     "new_players": [],
-    "updated_records": [],
+    "updated_records": [
+      {
+        "name": "Patrick Cheng",
+        "old_record": "3-1-0",
+        "new_record": "4-1-0",
+        "old_points": 9,
+        "new_points": 12
+      }
+    ],
     "rank_changes": [],
-    "timestamp": "2026-08-28T22:16:14.805440"
+    "timestamp": "2026-08-28T22:18:16.370907"
   }
 }
