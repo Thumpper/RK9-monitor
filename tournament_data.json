@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-28T23:10:17.197378",
+  "timestamp": "2026-08-28T23:12:15.064295",
   "source": "https://rk9.gg/pairings/WCS02wAQpCIaqFmXxER4",
   "mode": "html",
   "standings": [
@@ -102,16 +102,8 @@
   ],
   "recent_changes": {
     "new_players": [],
-    "updated_records": [
-      {
-        "name": "Dorian Kang",
-        "old_record": "2-3-0",
-        "new_record": "2-4-0",
-        "old_points": 6,
-        "new_points": 6
-      }
-    ],
+    "updated_records": [],
     "rank_changes": [],
-    "timestamp": "2026-08-28T23:10:17.197269"
+    "timestamp": "2026-08-28T23:12:15.064189"
   }
 }
