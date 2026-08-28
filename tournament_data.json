@@ -1,0 +1,168 @@
+{
+  "timestamp": "2026-08-28T17:57:55.801298",
+  "source": "https://rk9.gg/pairings/WCS02wAQpCIaqFmXxER4",
+  "mode": "html",
+  "standings": [
+    {
+      "name": "Navjit Joshi",
+      "country": "CA",
+      "wins": 1,
+      "losses": 0,
+      "ties": 0,
+      "points": 3,
+      "record": "1-0-0",
+      "placing": null,
+      "dropped": false
+    },
+    {
+      "name": "Dorian Kang",
+      "country": "CA",
+      "wins": 1,
+      "losses": 0,
+      "ties": 0,
+      "points": 3,
+      "record": "1-0-0",
+      "placing": null,
+      "dropped": false
+    },
+    {
+      "name": "J\u00e9r\u00e9my C\u00f4t\u00e9",
+      "country": "CA",
+      "wins": 1,
+      "losses": 0,
+      "ties": 0,
+      "points": 3,
+      "record": "1-0-0",
+      "placing": null,
+      "dropped": false
+    },
+    {
+      "name": "Marcus Dion",
+      "country": "CA",
+      "wins": 0,
+      "losses": 1,
+      "ties": 0,
+      "points": 0,
+      "record": "0-1-0",
+      "placing": null,
+      "dropped": false
+    },
+    {
+      "name": "Patrick Cheng",
+      "country": "CA",
+      "wins": 0,
+      "losses": 1,
+      "ties": 0,
+      "points": 0,
+      "record": "0-1-0",
+      "placing": null,
+      "dropped": false
+    },
+    {
+      "name": "Matt Tidd",
+      "country": "CA",
+      "wins": 0,
+      "losses": 1,
+      "ties": 0,
+      "points": 0,
+      "record": "0-1-0",
+      "placing": null,
+      "dropped": false
+    },
+    {
+      "name": "Kylan Van Severen",
+      "country": "CA",
+      "wins": 0,
+      "losses": 1,
+      "ties": 0,
+      "points": 0,
+      "record": "0-1-0",
+      "placing": null,
+      "dropped": false
+    }
+  ],
+  "recent_changes": {
+    "new_players": [
+      {
+        "name": "Navjit Joshi",
+        "country": "CA",
+        "wins": 1,
+        "losses": 0,
+        "ties": 0,
+        "points": 3,
+        "record": "1-0-0",
+        "placing": null,
+        "dropped": false
+      },
+      {
+        "name": "Dorian Kang",
+        "country": "CA",
+        "wins": 1,
+        "losses": 0,
+        "ties": 0,
+        "points": 3,
+        "record": "1-0-0",
+        "placing": null,
+        "dropped": false
+      },
+      {
+        "name": "J\u00e9r\u00e9my C\u00f4t\u00e9",
+        "country": "CA",
+        "wins": 1,
+        "losses": 0,
+        "ties": 0,
+        "points": 3,
+        "record": "1-0-0",
+        "placing": null,
+        "dropped": false
+      },
+      {
+        "name": "Marcus Dion",
+        "country": "CA",
+        "wins": 0,
+        "losses": 1,
+        "ties": 0,
+        "points": 0,
+        "record": "0-1-0",
+        "placing": null,
+        "dropped": false
+      },
+      {
+        "name": "Patrick Cheng",
+        "country": "CA",
+        "wins": 0,
+        "losses": 1,
+        "ties": 0,
+        "points": 0,
+        "record": "0-1-0",
+        "placing": null,
+        "dropped": false
+      },
+      {
+        "name": "Matt Tidd",
+        "country": "CA",
+        "wins": 0,
+        "losses": 1,
+        "ties": 0,
+        "points": 0,
+        "record": "0-1-0",
+        "placing": null,
+        "dropped": false
+      },
+      {
+        "name": "Kylan Van Severen",
+        "country": "CA",
+        "wins": 0,
+        "losses": 1,
+        "ties": 0,
+        "points": 0,
+        "record": "0-1-0",
+        "placing": null,
+        "dropped": false
+      }
+    ],
+    "updated_records": [],
+    "rank_changes": [],
+    "timestamp": "2026-08-28T17:57:55.801201"
+  }
+}
