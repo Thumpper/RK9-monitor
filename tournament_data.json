@@ -1,8 +1,24 @@
 {
-  "timestamp": "2026-08-28T23:02:16.757063",
+  "timestamp": "2026-08-28T23:04:15.453423",
   "source": "https://rk9.gg/pairings/WCS02wAQpCIaqFmXxER4",
   "mode": "html",
   "standings": [
+    {
+      "name": "Navjit Joshi",
+      "country": "CA",
+      "wins": 5,
+      "losses": 1,
+      "ties": 0,
+      "points": 15,
+      "record": "5-1-0",
+      "placing": null,
+      "dropped": false,
+      "current_round": 6,
+      "bye": false,
+      "current_opponent": "Eita Katagiri",
+      "current_opponent_country": "JP",
+      "current_table": "155"
+    },
     {
       "name": "Patrick Cheng",
       "country": "CA",
@@ -18,22 +34,6 @@
       "current_opponent": "Jittarin Rojmahamongkol",
       "current_opponent_country": "TH",
       "current_table": "147"
-    },
-    {
-      "name": "Navjit Joshi",
-      "country": "CA",
-      "wins": 4,
-      "losses": 1,
-      "ties": 0,
-      "points": 12,
-      "record": "4-1-0",
-      "placing": null,
-      "dropped": false,
-      "current_round": 6,
-      "bye": false,
-      "current_opponent": "Eita Katagiri",
-      "current_opponent_country": "JP",
-      "current_table": "155"
     },
     {
       "name": "J\u00e9r\u00e9my C\u00f4t\u00e9",
@@ -55,10 +55,10 @@
       "name": "Kylan Van Severen",
       "country": "CA",
       "wins": 3,
-      "losses": 2,
+      "losses": 3,
       "ties": 0,
       "points": 9,
-      "record": "3-2-0",
+      "record": "3-3-0",
       "placing": null,
       "dropped": false,
       "current_round": 6,
@@ -102,8 +102,23 @@
   ],
   "recent_changes": {
     "new_players": [],
-    "updated_records": [],
+    "updated_records": [
+      {
+        "name": "Navjit Joshi",
+        "old_record": "4-1-0",
+        "new_record": "5-1-0",
+        "old_points": 12,
+        "new_points": 15
+      },
+      {
+        "name": "Kylan Van Severen",
+        "old_record": "3-2-0",
+        "new_record": "3-3-0",
+        "old_points": 9,
+        "new_points": 9
+      }
+    ],
     "rank_changes": [],
-    "timestamp": "2026-08-28T23:02:16.756962"
+    "timestamp": "2026-08-28T23:04:15.453331"
   }
 }
