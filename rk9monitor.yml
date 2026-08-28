@@ -1,0 +1,64 @@
+name: RK9 Tournament Monitor
+
+# Runs the monitor on a schedule instead of on your own computer, and posts
+# standings to Discord. See SETUP_GITHUB_ACTIONS.md for one-time setup.
+#
+# Notes:
+#  - GitHub may delay scheduled runs during high load, and disables
+#    scheduled workflows automatically after 60 days with no repo activity
+#    (a manual "Run workflow" click, or any push, resets that clock).
+#  - This hits rk9.gg's /pairings/ page directly, which its robots.txt asks
+#    crawlers not to do. Running that unattended and on a schedule (as
+#    opposed to a one-off manual check) is more crawler-like - keep the
+#    interval reasonable and turn this off once you're done tracking the
+#    event. Switching to --json-url/--json-file mode, if you ever get that
+#    endpoint, avoids this entirely.
+
+on:
+  schedule:
+    - cron: "*/5 * * * *" # every 5 minutes - GitHub's practical minimum
+  workflow_dispatch: {} # lets you trigger a run manually from the Actions tab
+
+permissions:
+  contents: write # needed to commit the updated state files back
+
+concurrency:
+  group: rk9-monitor
+  cancel-in-progress: false # let an in-flight run finish rather than overlap
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run monitor
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          # Repository variables (Settings -> Secrets and variables -> Actions -> Variables)
+          # let you change these without editing this file. Defaults below
+          # match what we've been testing with.
+          RK9_URL: ${{ vars.RK9_URL || 'https://rk9.gg/pairings/WCS02wAQpCIaqFmXxER4' }}
+          RK9_DIVISION: ${{ vars.RK9_DIVISION || 'masters' }}
+          RK9_COUNTRIES: ${{ vars.RK9_COUNTRIES || 'CA' }}
+        run: |
+          python rk9_tournament_monitor.py --once \
+            --url "$RK9_URL" \
+            --division "$RK9_DIVISION" \
+            --countries $RK9_COUNTRIES \
+            --discord-webhook "$DISCORD_WEBHOOK_URL"
+
+      - name: Commit updated state
+        run: |
+          git config user.name "rk9-monitor-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add tournament_data.json discord_message_state.json
+          git diff --cached --quiet || git commit -m "Update tournament standings"
+          git push
