@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-28T17:57:55.801298",
+  "timestamp": "2026-08-28T18:17:57.807450",
   "source": "https://rk9.gg/pairings/WCS02wAQpCIaqFmXxER4",
   "mode": "html",
   "standings": [
@@ -37,7 +37,7 @@
       "dropped": false
     },
     {
-      "name": "Marcus Dion",
+      "name": "Matt Tidd",
       "country": "CA",
       "wins": 0,
       "losses": 1,
@@ -59,7 +59,7 @@
       "dropped": false
     },
     {
-      "name": "Matt Tidd",
+      "name": "Marcus Dion",
       "country": "CA",
       "wins": 0,
       "losses": 1,
@@ -117,7 +117,7 @@
         "dropped": false
       },
       {
-        "name": "Marcus Dion",
+        "name": "Matt Tidd",
         "country": "CA",
         "wins": 0,
         "losses": 1,
@@ -139,7 +139,7 @@
         "dropped": false
       },
       {
-        "name": "Matt Tidd",
+        "name": "Marcus Dion",
         "country": "CA",
         "wins": 0,
         "losses": 1,
@@ -163,6 +163,6 @@
     ],
     "updated_records": [],
     "rank_changes": [],
-    "timestamp": "2026-08-28T17:57:55.801201"
+    "timestamp": "2026-08-28T18:17:57.807317"
   }
 }
