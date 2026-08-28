@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-28T19:45:18.241363",
+  "timestamp": "2026-08-28T19:50:15.889642",
   "source": "https://rk9.gg/pairings/WCS02wAQpCIaqFmXxER4",
   "mode": "html",
   "standings": [
@@ -11,6 +11,17 @@
       "ties": 0,
       "points": 6,
       "record": "2-0-0",
+      "placing": null,
+      "dropped": false
+    },
+    {
+      "name": "Kylan Van Severen",
+      "country": "CA",
+      "wins": 2,
+      "losses": 1,
+      "ties": 0,
+      "points": 6,
+      "record": "2-1-0",
       "placing": null,
       "dropped": false
     },
@@ -27,17 +38,6 @@
     },
     {
       "name": "Patrick Cheng",
-      "country": "CA",
-      "wins": 1,
-      "losses": 1,
-      "ties": 0,
-      "points": 3,
-      "record": "1-1-0",
-      "placing": null,
-      "dropped": false
-    },
-    {
-      "name": "Kylan Van Severen",
       "country": "CA",
       "wins": 1,
       "losses": 1,
@@ -95,6 +95,17 @@
         "dropped": false
       },
       {
+        "name": "Kylan Van Severen",
+        "country": "CA",
+        "wins": 2,
+        "losses": 1,
+        "ties": 0,
+        "points": 6,
+        "record": "2-1-0",
+        "placing": null,
+        "dropped": false
+      },
+      {
         "name": "Dorian Kang",
         "country": "CA",
         "wins": 1,
@@ -107,17 +118,6 @@
       },
       {
         "name": "Patrick Cheng",
-        "country": "CA",
-        "wins": 1,
-        "losses": 1,
-        "ties": 0,
-        "points": 3,
-        "record": "1-1-0",
-        "placing": null,
-        "dropped": false
-      },
-      {
-        "name": "Kylan Van Severen",
         "country": "CA",
         "wins": 1,
         "losses": 1,
@@ -163,6 +163,6 @@
     ],
     "updated_records": [],
     "rank_changes": [],
-    "timestamp": "2026-08-28T19:45:18.241261"
+    "timestamp": "2026-08-28T19:50:15.889540"
   }
 }
