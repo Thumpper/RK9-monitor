@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-28T20:12:16.921867",
+  "timestamp": "2026-08-28T20:14:17.619799",
   "source": "https://rk9.gg/pairings/WCS02wAQpCIaqFmXxER4",
   "mode": "html",
   "standings": [
@@ -18,6 +18,22 @@
       "current_opponent": "\uc774 \ucc2c\ubbfc",
       "current_opponent_country": "KR",
       "current_table": "177"
+    },
+    {
+      "name": "Patrick Cheng",
+      "country": "CA",
+      "wins": 2,
+      "losses": 1,
+      "ties": 0,
+      "points": 6,
+      "record": "2-1-0",
+      "placing": null,
+      "dropped": false,
+      "current_round": 3,
+      "bye": false,
+      "current_opponent": "ALEX UNDERHILL",
+      "current_opponent_country": "US",
+      "current_table": "187"
     },
     {
       "name": "Kylan Van Severen",
@@ -55,10 +71,10 @@
       "name": "Dorian Kang",
       "country": "CA",
       "wins": 1,
-      "losses": 1,
+      "losses": 2,
       "ties": 0,
       "points": 3,
-      "record": "1-1-0",
+      "record": "1-2-0",
       "placing": null,
       "dropped": false,
       "current_round": 3,
@@ -66,22 +82,6 @@
       "current_opponent": "Rafi Ahmed Ansari",
       "current_opponent_country": "HK",
       "current_table": "184"
-    },
-    {
-      "name": "Patrick Cheng",
-      "country": "CA",
-      "wins": 1,
-      "losses": 1,
-      "ties": 0,
-      "points": 3,
-      "record": "1-1-0",
-      "placing": null,
-      "dropped": false,
-      "current_round": 3,
-      "bye": false,
-      "current_opponent": "ALEX UNDERHILL",
-      "current_opponent_country": "US",
-      "current_table": "187"
     },
     {
       "name": "Marcus Dion",
@@ -118,8 +118,23 @@
   ],
   "recent_changes": {
     "new_players": [],
-    "updated_records": [],
+    "updated_records": [
+      {
+        "name": "Patrick Cheng",
+        "old_record": "1-1-0",
+        "new_record": "2-1-0",
+        "old_points": 3,
+        "new_points": 6
+      },
+      {
+        "name": "Dorian Kang",
+        "old_record": "1-1-0",
+        "new_record": "1-2-0",
+        "old_points": 3,
+        "new_points": 3
+      }
+    ],
     "rank_changes": [],
-    "timestamp": "2026-08-28T20:12:16.921756"
+    "timestamp": "2026-08-28T20:14:17.619686"
   }
 }
