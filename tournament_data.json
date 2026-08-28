@@ -1,8 +1,24 @@
 {
-  "timestamp": "2026-08-28T20:50:20.560476",
+  "timestamp": "2026-08-28T20:52:12.703421",
   "source": "https://rk9.gg/pairings/WCS02wAQpCIaqFmXxER4",
   "mode": "html",
   "standings": [
+    {
+      "name": "Navjit Joshi",
+      "country": "CA",
+      "wins": 3,
+      "losses": 1,
+      "ties": 0,
+      "points": 9,
+      "record": "3-1-0",
+      "placing": null,
+      "dropped": false,
+      "current_round": 4,
+      "bye": false,
+      "current_opponent": "Javier Corrales Martinez",
+      "current_opponent_country": "ES",
+      "current_table": "219"
+    },
     {
       "name": "Kylan Van Severen",
       "country": "CA",
@@ -50,22 +66,6 @@
       "current_opponent": "Paul Chua",
       "current_opponent_country": "US",
       "current_table": "184"
-    },
-    {
-      "name": "Navjit Joshi",
-      "country": "CA",
-      "wins": 2,
-      "losses": 1,
-      "ties": 0,
-      "points": 6,
-      "record": "2-1-0",
-      "placing": null,
-      "dropped": false,
-      "current_round": 4,
-      "bye": false,
-      "current_opponent": "Javier Corrales Martinez",
-      "current_opponent_country": "ES",
-      "current_table": "219"
     },
     {
       "name": "Matt Tidd",
@@ -118,8 +118,16 @@
   ],
   "recent_changes": {
     "new_players": [],
-    "updated_records": [],
+    "updated_records": [
+      {
+        "name": "Navjit Joshi",
+        "old_record": "2-1-0",
+        "new_record": "3-1-0",
+        "old_points": 6,
+        "new_points": 9
+      }
+    ],
     "rank_changes": [],
-    "timestamp": "2026-08-28T20:50:20.560379"
+    "timestamp": "2026-08-28T20:52:12.703284"
   }
 }
