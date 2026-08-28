@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-28T21:00:26.183722",
+  "timestamp": "2026-08-28T21:02:20.955400",
   "source": "https://rk9.gg/pairings/WCS02wAQpCIaqFmXxER4",
   "mode": "html",
   "standings": [
@@ -118,37 +118,8 @@
   ],
   "recent_changes": {
     "new_players": [],
-    "updated_records": [
-      {
-        "name": "Kylan Van Severen",
-        "old_record": "2-1-0",
-        "new_record": "3-1-0",
-        "old_points": 6,
-        "new_points": 9
-      },
-      {
-        "name": "Patrick Cheng",
-        "old_record": "2-1-0",
-        "new_record": "3-1-0",
-        "old_points": 6,
-        "new_points": 9
-      },
-      {
-        "name": "J\u00e9r\u00e9my C\u00f4t\u00e9",
-        "old_record": "2-1-0",
-        "new_record": "2-2-0",
-        "old_points": 6,
-        "new_points": 6
-      },
-      {
-        "name": "Matt Tidd",
-        "old_record": "1-2-0",
-        "new_record": "2-2-0",
-        "old_points": 3,
-        "new_points": 6
-      }
-    ],
+    "updated_records": [],
     "rank_changes": [],
-    "timestamp": "2026-08-28T21:00:26.183612"
+    "timestamp": "2026-08-28T21:02:20.955305"
   }
 }
