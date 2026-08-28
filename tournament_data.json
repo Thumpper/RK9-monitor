@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-28T20:14:17.619799",
+  "timestamp": "2026-08-28T20:16:14.246498",
   "source": "https://rk9.gg/pairings/WCS02wAQpCIaqFmXxER4",
   "mode": "html",
   "standings": [
@@ -118,23 +118,8 @@
   ],
   "recent_changes": {
     "new_players": [],
-    "updated_records": [
-      {
-        "name": "Patrick Cheng",
-        "old_record": "1-1-0",
-        "new_record": "2-1-0",
-        "old_points": 3,
-        "new_points": 6
-      },
-      {
-        "name": "Dorian Kang",
-        "old_record": "1-1-0",
-        "new_record": "1-2-0",
-        "old_points": 3,
-        "new_points": 3
-      }
-    ],
+    "updated_records": [],
     "rank_changes": [],
-    "timestamp": "2026-08-28T20:14:17.619686"
+    "timestamp": "2026-08-28T20:16:14.246387"
   }
 }
