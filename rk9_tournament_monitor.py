@@ -81,6 +81,11 @@ class PlayerRecord:
     resistance_self: Optional[float] = None
     resistance_opp: Optional[float] = None
     resistance_oppopp: Optional[float] = None
+    current_round: Optional[int] = None
+    current_opponent: Optional[str] = None
+    current_opponent_country: Optional[str] = None
+    current_table: Optional[str] = None
+    bye: bool = False
 
     def __post_init__(self):
         if self.points is None:
@@ -89,6 +94,16 @@ class PlayerRecord:
     @property
     def record(self) -> str:
         return f"{self.wins}-{self.losses}-{self.ties}"
+
+    @property
+    def opponent_display(self) -> str:
+        """Short human-readable description of the current-round matchup."""
+        if self.bye:
+            return "BYE"
+        if self.current_opponent:
+            country = f" [{self.current_opponent_country}]" if self.current_opponent_country else ""
+            return f"{self.current_opponent}{country}"
+        return "-"
 
     def __repr__(self):
         rank = f"#{self.placing} " if self.placing is not None else ""
@@ -113,6 +128,12 @@ class PlayerRecord:
                 "opp": self.resistance_opp,
                 "oppopp": self.resistance_oppopp,
             }
+        if self.current_round is not None:
+            d["current_round"] = self.current_round
+            d["bye"] = self.bye
+            d["current_opponent"] = self.current_opponent
+            d["current_opponent_country"] = self.current_opponent_country
+            d["current_table"] = self.current_table
         return d
 
 
@@ -256,11 +277,28 @@ def build_discord_embed(
     for u in changes.get("updated_records", [])[:10]:
         change_notes.append(f"• **{u['name']}**: {u['old_record']} → {u['new_record']}")
 
+    fields = []
+
+    matchup_lines = []
+    for p in players[:max_rows]:
+        if p.dropped:
+            continue
+        matchup_lines.append(f"**{p.name}** vs {p.opponent_display}")
+    if matchup_lines:
+        value = "\n".join(matchup_lines)
+        if len(value) > DISCORD_FIELD_VALUE_LIMIT:
+            value = value[: DISCORD_FIELD_VALUE_LIMIT - 15] + "\n... (more)"
+        round_label = f" (Round {players[0].current_round})" if players and players[0].current_round else ""
+        fields.append({"name": f"Current Matchups{round_label}", "value": value, "inline": False})
+
     if change_notes:
         value = "\n".join(change_notes)
         if len(value) > DISCORD_FIELD_VALUE_LIMIT:
             value = value[: DISCORD_FIELD_VALUE_LIMIT - 15] + "\n... (more)"
-        embed["fields"] = [{"name": "Recent changes", "value": value, "inline": False}]
+        fields.append({"name": "Recent changes", "value": value, "inline": False})
+
+    if fields:
+        embed["fields"] = fields
 
     return embed
 
@@ -355,6 +393,25 @@ class RK9TournamentMonitor:
             name, country = self._split_name_country(raw_name)
             rec = entry.get("record") or {}
             res = entry.get("resistances") or {}
+
+            current_round = current_opponent = current_opponent_country = current_table = None
+            is_bye = False
+            rounds = entry.get("rounds") or {}
+            if rounds:
+                try:
+                    latest_round_num = max(int(k) for k in rounds.keys())
+                    latest = rounds[str(latest_round_num)]
+                    opp_raw = (latest.get("name") or "").strip()
+                    if opp_raw.upper() == "BYE":
+                        is_bye = True
+                    elif opp_raw:
+                        current_opponent, current_opponent_country = self._split_name_country(opp_raw)
+                    current_round = latest_round_num
+                    table = latest.get("table")
+                    current_table = str(table) if table not in (None, "") else None
+                except (ValueError, TypeError, KeyError):
+                    pass  # malformed rounds data - just skip the opponent info for this player
+
             players.append(
                 PlayerRecord(
                     name=name,
@@ -367,6 +424,11 @@ class RK9TournamentMonitor:
                     resistance_self=res.get("self"),
                     resistance_opp=res.get("opp"),
                     resistance_oppopp=res.get("oppopp"),
+                    current_round=current_round,
+                    current_opponent=current_opponent,
+                    current_opponent_country=current_opponent_country,
+                    current_table=current_table,
+                    bye=is_bye,
                 )
             )
         return players
@@ -437,22 +499,32 @@ class RK9TournamentMonitor:
 
         players: Dict[str, PlayerRecord] = {}
         for pane in round_panes:
+            round_num = int(ROUND_PANE_RE.match(pane["id"]).group("round"))
             for row in pane.select("div.match"):
                 # Skip the header row ("Player 1" / "Table #" / "Player 2"),
                 # which is a plain div.match without the row-cols-3 class
                 # that actual data rows carry.
                 if "row-cols-3" not in row.get("class", []):
                     continue
+
+                table_el = row.select_one(".tablenumber")
+                table_num = table_el.get_text(strip=True) if table_el else None
+
+                # Gather whichever player slots in this row actually have a
+                # name+record (a bye leaves the second slot empty), so each
+                # player can be recorded as the other's current opponent.
+                seats = []
                 for player_col in row.select("div.player"):
                     name_el = player_col.select_one("span.name")
                     record_el = player_col.select_one("span.record")
                     if name_el is None or record_el is None:
                         continue  # empty slot (e.g. a bye's absent opponent)
-
                     raw_name = name_el.get_text(" ", strip=True)
                     name, country = self._split_name_country(raw_name)
-                    if not name:
-                        continue
+                    if name:
+                        seats.append((name, country, record_el))
+
+                for i, (name, country, record_el) in enumerate(seats):
 
                     def as_int(attr):
                         try:
@@ -460,9 +532,16 @@ class RK9TournamentMonitor:
                         except (TypeError, ValueError):
                             return 0
 
+                    opponent = seats[1 - i] if len(seats) == 2 else None
+
                     players[name] = PlayerRecord(
                         name=name,
                         country=country,
+                        current_round=round_num,
+                        current_opponent=opponent[0] if opponent else None,
+                        current_opponent_country=opponent[1] if opponent else None,
+                        current_table=table_num,
+                        bye=opponent is None,
                         wins=as_int("data-wins"),
                         losses=as_int("data-losses"),
                         ties=as_int("data-ties"),
@@ -604,19 +683,27 @@ class RK9TournamentMonitor:
     @staticmethod
     def print_standings(players: List[PlayerRecord]):
         """Print current standings in a formatted table."""
+        show_opponents = any(p.current_opponent or p.bye for p in players)
+
         print("\n" + "=" * 78)
         print(f"Tournament Standings - {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
         print("=" * 78)
-        print(f"{'Rank':<6} {'Player':<25} {'Country':<8} {'Record':<12} {'Points':<8}")
+        header = f"{'Rank':<6} {'Player':<25} {'Country':<8} {'Record':<12} {'Points':<8}"
+        if show_opponents:
+            header += " Current Opponent"
+        print(header)
         print("-" * 78)
 
         for i, player in enumerate(players, 1):
             rank = player.placing if player.placing is not None else i
             status = " (DROPPED)" if player.dropped else ""
-            print(
+            line = (
                 f"{rank:<6} {player.name:<25} {player.country:<8} "
                 f"{player.record:<12} {player.points:<8}{status}"
             )
+            if show_opponents and not player.dropped:
+                line += f"  vs {player.opponent_display}"
+            print(line)
 
         print("=" * 78)
 
@@ -643,6 +730,47 @@ class RK9TournamentMonitor:
             if os.path.exists(tmp_path):
                 os.remove(tmp_path)
 
+    def load_previous_data(self) -> Optional[List[PlayerRecord]]:
+        """Load standings saved by a previous run from self.output_path, if
+        any. This is what lets change/rank-change detection work across
+        separate process runs (e.g. one `--once` invocation per scheduled
+        run, as opposed to one long-lived `monitor()` loop where state just
+        stays in memory the whole time)."""
+        if not self.output_path.exists():
+            return None
+        try:
+            with open(self.output_path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            players = []
+            for s in data.get("standings", []):
+                resistances = s.get("resistances") or {}
+                players.append(
+                    PlayerRecord(
+                        name=s["name"],
+                        country=s["country"],
+                        wins=s["wins"],
+                        losses=s["losses"],
+                        ties=s["ties"],
+                        points=s.get("points"),
+                        placing=s.get("placing"),
+                        dropped=s.get("dropped", False),
+                        resistance_self=resistances.get("self"),
+                        resistance_opp=resistances.get("opp"),
+                        resistance_oppopp=resistances.get("oppopp"),
+                        current_round=s.get("current_round"),
+                        current_opponent=s.get("current_opponent"),
+                        current_opponent_country=s.get("current_opponent_country"),
+                        current_table=s.get("current_table"),
+                        bye=s.get("bye", False),
+                    )
+                )
+            return players
+        except (OSError, json.JSONDecodeError, KeyError) as e:
+            logger.warning(
+                "Couldn't load previous standings from %s (starting fresh): %s", self.output_path, e
+            )
+            return None
+
     # ---- monitor loop --------------------------------------------------------
 
     def request_stop(self, *_args):
@@ -655,6 +783,9 @@ class RK9TournamentMonitor:
         filter_countries: Optional[List[str]] = None,
     ) -> bool:
         """Do a single fetch/parse/print/save cycle. Returns True on success."""
+        if self.previous_data is None:
+            self.previous_data = self.load_previous_data()
+
         players = self.get_current_standings()
         if players is None:
             print("Failed to fetch data (network/HTTP error - see the message above)")
