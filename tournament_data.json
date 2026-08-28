@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-28T19:50:15.889642",
+  "timestamp": "2026-08-28T19:56:14.932355",
   "source": "https://rk9.gg/pairings/WCS02wAQpCIaqFmXxER4",
   "mode": "html",
   "standings": [
@@ -7,12 +7,17 @@
       "name": "Navjit Joshi",
       "country": "CA",
       "wins": 2,
-      "losses": 0,
+      "losses": 1,
       "ties": 0,
       "points": 6,
-      "record": "2-0-0",
+      "record": "2-1-0",
       "placing": null,
-      "dropped": false
+      "dropped": false,
+      "current_round": 3,
+      "bye": false,
+      "current_opponent": "\uc774 \ucc2c\ubbfc",
+      "current_opponent_country": "KR",
+      "current_table": "177"
     },
     {
       "name": "Kylan Van Severen",
@@ -23,7 +28,12 @@
       "points": 6,
       "record": "2-1-0",
       "placing": null,
-      "dropped": false
+      "dropped": false,
+      "current_round": 3,
+      "bye": false,
+      "current_opponent": "Giuseppe Musicco",
+      "current_opponent_country": "IT",
+      "current_table": "205"
     },
     {
       "name": "Dorian Kang",
@@ -34,7 +44,12 @@
       "points": 3,
       "record": "1-1-0",
       "placing": null,
-      "dropped": false
+      "dropped": false,
+      "current_round": 3,
+      "bye": false,
+      "current_opponent": "Rafi Ahmed Ansari",
+      "current_opponent_country": "HK",
+      "current_table": "184"
     },
     {
       "name": "Patrick Cheng",
@@ -45,7 +60,12 @@
       "points": 3,
       "record": "1-1-0",
       "placing": null,
-      "dropped": false
+      "dropped": false,
+      "current_round": 3,
+      "bye": false,
+      "current_opponent": "ALEX UNDERHILL",
+      "current_opponent_country": "US",
+      "current_table": "187"
     },
     {
       "name": "Marcus Dion",
@@ -56,7 +76,12 @@
       "points": 3,
       "record": "1-1-0",
       "placing": null,
-      "dropped": false
+      "dropped": false,
+      "current_round": 3,
+      "bye": false,
+      "current_opponent": "Junhyuk Song",
+      "current_opponent_country": "KR",
+      "current_table": "241"
     },
     {
       "name": "J\u00e9r\u00e9my C\u00f4t\u00e9",
@@ -67,7 +92,12 @@
       "points": 3,
       "record": "1-1-0",
       "placing": null,
-      "dropped": false
+      "dropped": false,
+      "current_round": 3,
+      "bye": false,
+      "current_opponent": "KEVIN LAN",
+      "current_opponent_country": "TW",
+      "current_table": "251"
     },
     {
       "name": "Matt Tidd",
@@ -78,91 +108,26 @@
       "points": 0,
       "record": "0-2-0",
       "placing": null,
-      "dropped": false
+      "dropped": false,
+      "current_round": 3,
+      "bye": false,
+      "current_opponent": "Alejandro Terrazas",
+      "current_opponent_country": "MX",
+      "current_table": "303"
     }
   ],
   "recent_changes": {
-    "new_players": [
+    "new_players": [],
+    "updated_records": [
       {
         "name": "Navjit Joshi",
-        "country": "CA",
-        "wins": 2,
-        "losses": 0,
-        "ties": 0,
-        "points": 6,
-        "record": "2-0-0",
-        "placing": null,
-        "dropped": false
-      },
-      {
-        "name": "Kylan Van Severen",
-        "country": "CA",
-        "wins": 2,
-        "losses": 1,
-        "ties": 0,
-        "points": 6,
-        "record": "2-1-0",
-        "placing": null,
-        "dropped": false
-      },
-      {
-        "name": "Dorian Kang",
-        "country": "CA",
-        "wins": 1,
-        "losses": 1,
-        "ties": 0,
-        "points": 3,
-        "record": "1-1-0",
-        "placing": null,
-        "dropped": false
-      },
-      {
-        "name": "Patrick Cheng",
-        "country": "CA",
-        "wins": 1,
-        "losses": 1,
-        "ties": 0,
-        "points": 3,
-        "record": "1-1-0",
-        "placing": null,
-        "dropped": false
-      },
-      {
-        "name": "Marcus Dion",
-        "country": "CA",
-        "wins": 1,
-        "losses": 1,
-        "ties": 0,
-        "points": 3,
-        "record": "1-1-0",
-        "placing": null,
-        "dropped": false
-      },
-      {
-        "name": "J\u00e9r\u00e9my C\u00f4t\u00e9",
-        "country": "CA",
-        "wins": 1,
-        "losses": 1,
-        "ties": 0,
-        "points": 3,
-        "record": "1-1-0",
-        "placing": null,
-        "dropped": false
-      },
-      {
-        "name": "Matt Tidd",
-        "country": "CA",
-        "wins": 0,
-        "losses": 2,
-        "ties": 0,
-        "points": 0,
-        "record": "0-2-0",
-        "placing": null,
-        "dropped": false
+        "old_record": "2-0-0",
+        "new_record": "2-1-0",
+        "old_points": 6,
+        "new_points": 6
       }
     ],
-    "updated_records": [],
     "rank_changes": [],
-    "timestamp": "2026-08-28T19:50:15.889540"
+    "timestamp": "2026-08-28T19:56:14.932241"
   }
 }
