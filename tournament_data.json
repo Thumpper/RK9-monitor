@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-28T23:32:11.855803",
+  "timestamp": "2026-08-28T23:34:12.619441",
   "source": "https://rk9.gg/pairings/WCS02wAQpCIaqFmXxER4",
   "mode": "html",
   "standings": [
@@ -13,11 +13,11 @@
       "record": "5-1-0",
       "placing": null,
       "dropped": false,
-      "current_round": 6,
+      "current_round": 7,
       "bye": false,
-      "current_opponent": "Eita Katagiri",
-      "current_opponent_country": "JP",
-      "current_table": "155"
+      "current_opponent": "Simone Sanvito",
+      "current_opponent_country": "IT",
+      "current_table": "135"
     },
     {
       "name": "Patrick Cheng",
@@ -29,27 +29,27 @@
       "record": "4-2-0",
       "placing": null,
       "dropped": false,
-      "current_round": 6,
+      "current_round": 7,
       "bye": false,
-      "current_opponent": "Jittarin Rojmahamongkol",
-      "current_opponent_country": "TH",
-      "current_table": "147"
+      "current_opponent": "Giovanni Cischke",
+      "current_opponent_country": "US",
+      "current_table": "158"
     },
     {
       "name": "J\u00e9r\u00e9my C\u00f4t\u00e9",
       "country": "CA",
-      "wins": 3,
+      "wins": 4,
       "losses": 2,
       "ties": 0,
-      "points": 9,
-      "record": "3-2-0",
+      "points": 12,
+      "record": "4-2-0",
       "placing": null,
       "dropped": false,
-      "current_round": 6,
+      "current_round": 7,
       "bye": false,
-      "current_opponent": "Erich Schrader",
+      "current_opponent": "Wolfe Glick",
       "current_opponent_country": "US",
-      "current_table": "184"
+      "current_table": "175"
     },
     {
       "name": "Kylan Van Severen",
@@ -61,11 +61,11 @@
       "record": "3-3-0",
       "placing": null,
       "dropped": false,
-      "current_round": 6,
+      "current_round": 7,
       "bye": false,
-      "current_opponent": "Paul Ruiz",
-      "current_opponent_country": "EC",
-      "current_table": "216"
+      "current_opponent": "Arath Alejandro Vera Almaraz",
+      "current_opponent_country": "MX",
+      "current_table": "221"
     },
     {
       "name": "Matt Tidd",
@@ -77,11 +77,11 @@
       "record": "3-3-0",
       "placing": null,
       "dropped": false,
-      "current_round": 6,
+      "current_round": 7,
       "bye": false,
-      "current_opponent": "Francisco Alca Chacon",
-      "current_opponent_country": "PE",
-      "current_table": "246"
+      "current_opponent": "Aki Shibuya",
+      "current_opponent_country": "JP",
+      "current_table": "223"
     },
     {
       "name": "Dorian Kang",
@@ -93,17 +93,25 @@
       "record": "2-4-0",
       "placing": null,
       "dropped": false,
-      "current_round": 6,
+      "current_round": 7,
       "bye": false,
-      "current_opponent": "Sidy Badiane",
-      "current_opponent_country": "IT",
-      "current_table": "250"
+      "current_opponent": "C\u00e9sar Reyes",
+      "current_opponent_country": "MX",
+      "current_table": "248"
     }
   ],
   "recent_changes": {
     "new_players": [],
-    "updated_records": [],
+    "updated_records": [
+      {
+        "name": "J\u00e9r\u00e9my C\u00f4t\u00e9",
+        "old_record": "3-2-0",
+        "new_record": "4-2-0",
+        "old_points": 9,
+        "new_points": 12
+      }
+    ],
     "rank_changes": [],
-    "timestamp": "2026-08-28T23:32:11.855701"
+    "timestamp": "2026-08-28T23:34:12.619322"
   }
 }
