@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-28T22:08:16.621760",
+  "timestamp": "2026-08-28T22:10:18.971855",
   "source": "https://rk9.gg/pairings/WCS02wAQpCIaqFmXxER4",
   "mode": "html",
   "standings": [
@@ -118,16 +118,8 @@
   ],
   "recent_changes": {
     "new_players": [],
-    "updated_records": [
-      {
-        "name": "Navjit Joshi",
-        "old_record": "3-1-0",
-        "new_record": "4-1-0",
-        "old_points": 9,
-        "new_points": 12
-      }
-    ],
+    "updated_records": [],
     "rank_changes": [],
-    "timestamp": "2026-08-28T22:08:16.621635"
+    "timestamp": "2026-08-28T22:10:18.971752"
   }
 }
