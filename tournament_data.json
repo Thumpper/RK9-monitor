@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-28T21:50:25.373764",
+  "timestamp": "2026-08-28T21:52:15.984065",
   "source": "https://rk9.gg/pairings/WCS02wAQpCIaqFmXxER4",
   "mode": "html",
   "standings": [
@@ -118,16 +118,8 @@
   ],
   "recent_changes": {
     "new_players": [],
-    "updated_records": [
-      {
-        "name": "J\u00e9r\u00e9my C\u00f4t\u00e9",
-        "old_record": "2-2-0",
-        "new_record": "3-2-0",
-        "old_points": 6,
-        "new_points": 9
-      }
-    ],
+    "updated_records": [],
     "rank_changes": [],
-    "timestamp": "2026-08-28T21:50:25.373654"
+    "timestamp": "2026-08-28T21:52:15.983960"
   }
 }
