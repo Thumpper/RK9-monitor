@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-28T22:50:16.391738",
+  "timestamp": "2026-08-28T22:52:13.726471",
   "source": "https://rk9.gg/pairings/WCS02wAQpCIaqFmXxER4",
   "mode": "html",
   "standings": [
@@ -102,16 +102,8 @@
   ],
   "recent_changes": {
     "new_players": [],
-    "updated_records": [
-      {
-        "name": "Matt Tidd",
-        "old_record": "2-3-0",
-        "new_record": "3-3-0",
-        "old_points": 6,
-        "new_points": 9
-      }
-    ],
+    "updated_records": [],
     "rank_changes": [],
-    "timestamp": "2026-08-28T22:50:16.391619"
+    "timestamp": "2026-08-28T22:52:13.726362"
   }
 }
