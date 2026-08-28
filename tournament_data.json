@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-28T19:56:14.932355",
+  "timestamp": "2026-08-28T19:58:14.184968",
   "source": "https://rk9.gg/pairings/WCS02wAQpCIaqFmXxER4",
   "mode": "html",
   "standings": [
@@ -102,11 +102,11 @@
     {
       "name": "Matt Tidd",
       "country": "CA",
-      "wins": 0,
+      "wins": 1,
       "losses": 2,
       "ties": 0,
-      "points": 0,
-      "record": "0-2-0",
+      "points": 3,
+      "record": "1-2-0",
       "placing": null,
       "dropped": false,
       "current_round": 3,
@@ -120,14 +120,14 @@
     "new_players": [],
     "updated_records": [
       {
-        "name": "Navjit Joshi",
-        "old_record": "2-0-0",
-        "new_record": "2-1-0",
-        "old_points": 6,
-        "new_points": 6
+        "name": "Matt Tidd",
+        "old_record": "0-2-0",
+        "new_record": "1-2-0",
+        "old_points": 0,
+        "new_points": 3
       }
     ],
     "rank_changes": [],
-    "timestamp": "2026-08-28T19:56:14.932241"
+    "timestamp": "2026-08-28T19:58:14.184854"
   }
 }
