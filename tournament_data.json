@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-28T20:02:17.813540",
+  "timestamp": "2026-08-28T20:04:15.123593",
   "source": "https://rk9.gg/pairings/WCS02wAQpCIaqFmXxER4",
   "mode": "html",
   "standings": [
@@ -71,10 +71,10 @@
       "name": "Marcus Dion",
       "country": "CA",
       "wins": 1,
-      "losses": 1,
+      "losses": 2,
       "ties": 0,
       "points": 3,
-      "record": "1-1-0",
+      "record": "1-2-0",
       "placing": null,
       "dropped": false,
       "current_round": 3,
@@ -118,8 +118,16 @@
   ],
   "recent_changes": {
     "new_players": [],
-    "updated_records": [],
+    "updated_records": [
+      {
+        "name": "Marcus Dion",
+        "old_record": "1-1-0",
+        "new_record": "1-2-0",
+        "old_points": 3,
+        "new_points": 3
+      }
+    ],
     "rank_changes": [],
-    "timestamp": "2026-08-28T20:02:17.813441"
+    "timestamp": "2026-08-28T20:04:15.123475"
   }
 }
