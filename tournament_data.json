@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-29T00:20:19.855255",
+  "timestamp": "2026-08-29T00:22:16.842172",
   "source": "https://rk9.gg/pairings/WCS02wAQpCIaqFmXxER4",
   "mode": "html",
   "standings": [
@@ -22,11 +22,11 @@
     {
       "name": "Patrick Cheng",
       "country": "CA",
-      "wins": 4,
+      "wins": 5,
       "losses": 2,
       "ties": 0,
-      "points": 12,
-      "record": "4-2-0",
+      "points": 15,
+      "record": "5-2-0",
       "placing": null,
       "dropped": false,
       "current_round": 7,
@@ -102,8 +102,16 @@
   ],
   "recent_changes": {
     "new_players": [],
-    "updated_records": [],
+    "updated_records": [
+      {
+        "name": "Patrick Cheng",
+        "old_record": "4-2-0",
+        "new_record": "5-2-0",
+        "old_points": 12,
+        "new_points": 15
+      }
+    ],
     "rank_changes": [],
-    "timestamp": "2026-08-29T00:20:19.855157"
+    "timestamp": "2026-08-29T00:22:16.842087"
   }
 }
