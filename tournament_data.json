@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-29T01:06:16.004679",
+  "timestamp": "2026-08-29T01:08:11.703002",
   "source": "https://rk9.gg/pairings/WCS02wAQpCIaqFmXxER4",
   "mode": "html",
   "standings": [
@@ -23,10 +23,10 @@
       "name": "Patrick Cheng",
       "country": "CA",
       "wins": 5,
-      "losses": 2,
+      "losses": 3,
       "ties": 0,
       "points": 15,
-      "record": "5-2-0",
+      "record": "5-3-0",
       "placing": null,
       "dropped": false,
       "current_round": 8,
@@ -38,11 +38,11 @@
     {
       "name": "J\u00e9r\u00e9my C\u00f4t\u00e9",
       "country": "CA",
-      "wins": 4,
+      "wins": 5,
       "losses": 3,
       "ties": 0,
-      "points": 12,
-      "record": "4-3-0",
+      "points": 15,
+      "record": "5-3-0",
       "placing": null,
       "dropped": false,
       "current_round": 8,
@@ -50,6 +50,22 @@
       "current_opponent": "Arian Herter",
       "current_opponent_country": "DE",
       "current_table": "177"
+    },
+    {
+      "name": "Kylan Van Severen",
+      "country": "CA",
+      "wins": 4,
+      "losses": 4,
+      "ties": 0,
+      "points": 12,
+      "record": "4-4-0",
+      "placing": null,
+      "dropped": false,
+      "current_round": 8,
+      "bye": false,
+      "current_opponent": "Sebastian Gonzalez",
+      "current_opponent_country": "US",
+      "current_table": "237"
     },
     {
       "name": "Dorian Kang",
@@ -66,22 +82,6 @@
       "current_opponent": "Zachary Mnich",
       "current_opponent_country": "US",
       "current_table": "234"
-    },
-    {
-      "name": "Kylan Van Severen",
-      "country": "CA",
-      "wins": 3,
-      "losses": 4,
-      "ties": 0,
-      "points": 9,
-      "record": "3-4-0",
-      "placing": null,
-      "dropped": false,
-      "current_round": 8,
-      "bye": false,
-      "current_opponent": "Sebastian Gonzalez",
-      "current_opponent_country": "US",
-      "current_table": "237"
     },
     {
       "name": "Matt Tidd",
@@ -102,8 +102,30 @@
   ],
   "recent_changes": {
     "new_players": [],
-    "updated_records": [],
+    "updated_records": [
+      {
+        "name": "Patrick Cheng",
+        "old_record": "5-2-0",
+        "new_record": "5-3-0",
+        "old_points": 15,
+        "new_points": 15
+      },
+      {
+        "name": "J\u00e9r\u00e9my C\u00f4t\u00e9",
+        "old_record": "4-3-0",
+        "new_record": "5-3-0",
+        "old_points": 12,
+        "new_points": 15
+      },
+      {
+        "name": "Kylan Van Severen",
+        "old_record": "3-4-0",
+        "new_record": "4-4-0",
+        "old_points": 9,
+        "new_points": 12
+      }
+    ],
     "rank_changes": [],
-    "timestamp": "2026-08-29T01:06:16.004587"
+    "timestamp": "2026-08-29T01:08:11.702843"
   }
 }
