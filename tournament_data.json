@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-29T00:08:18.100772",
+  "timestamp": "2026-08-29T00:10:15.749316",
   "source": "https://rk9.gg/pairings/WCS02wAQpCIaqFmXxER4",
   "mode": "html",
   "standings": [
@@ -39,10 +39,10 @@
       "name": "J\u00e9r\u00e9my C\u00f4t\u00e9",
       "country": "CA",
       "wins": 4,
-      "losses": 2,
+      "losses": 3,
       "ties": 0,
       "points": 12,
-      "record": "4-2-0",
+      "record": "4-3-0",
       "placing": null,
       "dropped": false,
       "current_round": 7,
@@ -102,8 +102,16 @@
   ],
   "recent_changes": {
     "new_players": [],
-    "updated_records": [],
+    "updated_records": [
+      {
+        "name": "J\u00e9r\u00e9my C\u00f4t\u00e9",
+        "old_record": "4-2-0",
+        "new_record": "4-3-0",
+        "old_points": 12,
+        "new_points": 12
+      }
+    ],
     "rank_changes": [],
-    "timestamp": "2026-08-29T00:08:18.100660"
+    "timestamp": "2026-08-29T00:10:15.749212"
   }
 }
