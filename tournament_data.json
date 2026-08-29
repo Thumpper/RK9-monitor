@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-29T16:48:21.983807",
+  "timestamp": "2026-08-29T16:50:16.926801",
   "source": "https://rk9.gg/pairings/WCS02wAQpCIaqFmXxER4",
   "mode": "html",
   "standings": [
@@ -7,23 +7,31 @@
       "name": "Navjit Joshi",
       "country": "CA",
       "wins": 7,
-      "losses": 1,
+      "losses": 2,
       "ties": 0,
       "points": 21,
-      "record": "7-1-0",
+      "record": "7-2-0",
       "placing": null,
       "dropped": false,
-      "current_round": 9,
+      "current_round": 10,
       "bye": false,
-      "current_opponent": "Antonio S\u00e1nchez",
-      "current_opponent_country": "ES",
-      "current_table": "115"
+      "current_opponent": "Yuya Tada",
+      "current_opponent_country": "JP",
+      "current_table": "123"
     }
   ],
   "recent_changes": {
     "new_players": [],
-    "updated_records": [],
+    "updated_records": [
+      {
+        "name": "Navjit Joshi",
+        "old_record": "7-1-0",
+        "new_record": "7-2-0",
+        "old_points": 21,
+        "new_points": 21
+      }
+    ],
     "rank_changes": [],
-    "timestamp": "2026-08-29T16:48:21.983741"
+    "timestamp": "2026-08-29T16:50:16.926731"
   }
 }
