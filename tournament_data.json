@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-29T15:28:13.676266",
+  "timestamp": "2026-08-29T15:30:19.991522",
   "source": "https://rk9.gg/pairings/WCS02wAQpCIaqFmXxER4",
   "mode": "html",
   "standings": [
@@ -13,97 +13,17 @@
       "record": "7-1-0",
       "placing": null,
       "dropped": false,
-      "current_round": 8,
+      "current_round": 9,
       "bye": false,
-      "current_opponent": "William Brown",
-      "current_opponent_country": "US",
-      "current_table": "132"
-    },
-    {
-      "name": "Patrick Cheng",
-      "country": "CA",
-      "wins": 5,
-      "losses": 3,
-      "ties": 0,
-      "points": 15,
-      "record": "5-3-0",
-      "placing": null,
-      "dropped": false,
-      "current_round": 8,
-      "bye": false,
-      "current_opponent": "Ryoma Okamoto",
-      "current_opponent_country": "JP",
-      "current_table": "167"
-    },
-    {
-      "name": "J\u00e9r\u00e9my C\u00f4t\u00e9",
-      "country": "CA",
-      "wins": 5,
-      "losses": 3,
-      "ties": 0,
-      "points": 15,
-      "record": "5-3-0",
-      "placing": null,
-      "dropped": false,
-      "current_round": 8,
-      "bye": false,
-      "current_opponent": "Arian Herter",
-      "current_opponent_country": "DE",
-      "current_table": "177"
-    },
-    {
-      "name": "Kylan Van Severen",
-      "country": "CA",
-      "wins": 4,
-      "losses": 4,
-      "ties": 0,
-      "points": 12,
-      "record": "4-4-0",
-      "placing": null,
-      "dropped": false,
-      "current_round": 8,
-      "bye": false,
-      "current_opponent": "Sebastian Gonzalez",
-      "current_opponent_country": "US",
-      "current_table": "237"
-    },
-    {
-      "name": "Dorian Kang",
-      "country": "CA",
-      "wins": 3,
-      "losses": 5,
-      "ties": 0,
-      "points": 9,
-      "record": "3-5-0",
-      "placing": null,
-      "dropped": false,
-      "current_round": 8,
-      "bye": false,
-      "current_opponent": "Zachary Mnich",
-      "current_opponent_country": "US",
-      "current_table": "234"
-    },
-    {
-      "name": "Matt Tidd",
-      "country": "CA",
-      "wins": 3,
-      "losses": 5,
-      "ties": 0,
-      "points": 9,
-      "record": "3-5-0",
-      "placing": null,
-      "dropped": false,
-      "current_round": 8,
-      "bye": false,
-      "current_opponent": "KOHEI WATANABE",
-      "current_opponent_country": "JP",
-      "current_table": "240"
+      "current_opponent": "Antonio S\u00e1nchez",
+      "current_opponent_country": "ES",
+      "current_table": "115"
     }
   ],
   "recent_changes": {
     "new_players": [],
     "updated_records": [],
     "rank_changes": [],
-    "timestamp": "2026-08-29T15:28:13.676169"
+    "timestamp": "2026-08-29T15:30:19.991430"
   }
 }
