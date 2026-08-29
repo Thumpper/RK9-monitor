@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-29T19:12:13.631842",
+  "timestamp": "2026-08-29T19:14:13.671974",
   "source": "https://rk9.gg/pairings/WCS02wAQpCIaqFmXxER4",
   "mode": "html",
   "standings": [
@@ -9,21 +9,21 @@
       "wins": 9,
       "losses": 2,
       "ties": 0,
-      "points": 27,
+      "points": 0,
       "record": "9-2-0",
       "placing": null,
       "dropped": false,
-      "current_round": 11,
+      "current_round": 12,
       "bye": false,
-      "current_opponent": "Kiran Singh",
-      "current_opponent_country": "AU",
-      "current_table": "120"
+      "current_opponent": "Hiroshi Onishi",
+      "current_opponent_country": "JP",
+      "current_table": "110"
     }
   ],
   "recent_changes": {
     "new_players": [],
     "updated_records": [],
     "rank_changes": [],
-    "timestamp": "2026-08-29T19:12:13.631767"
+    "timestamp": "2026-08-29T19:14:13.671911"
   }
 }
