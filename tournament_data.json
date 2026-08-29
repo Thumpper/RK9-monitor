@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-29T18:02:15.171366",
+  "timestamp": "2026-08-29T18:04:12.415157",
   "source": "https://rk9.gg/pairings/WCS02wAQpCIaqFmXxER4",
   "mode": "html",
   "standings": [
@@ -13,17 +13,17 @@
       "record": "8-2-0",
       "placing": null,
       "dropped": false,
-      "current_round": 10,
+      "current_round": 11,
       "bye": false,
-      "current_opponent": "Yuya Tada",
-      "current_opponent_country": "JP",
-      "current_table": "123"
+      "current_opponent": "Kiran Singh",
+      "current_opponent_country": "AU",
+      "current_table": "120"
     }
   ],
   "recent_changes": {
     "new_players": [],
     "updated_records": [],
     "rank_changes": [],
-    "timestamp": "2026-08-29T18:02:15.171304"
+    "timestamp": "2026-08-29T18:04:12.415085"
   }
 }
