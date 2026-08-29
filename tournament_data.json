@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-29T00:56:13.578446",
+  "timestamp": "2026-08-29T00:58:19.889820",
   "source": "https://rk9.gg/pairings/WCS02wAQpCIaqFmXxER4",
   "mode": "html",
   "standings": [
@@ -55,10 +55,10 @@
       "name": "Dorian Kang",
       "country": "CA",
       "wins": 3,
-      "losses": 4,
+      "losses": 5,
       "ties": 0,
       "points": 9,
-      "record": "3-4-0",
+      "record": "3-5-0",
       "placing": null,
       "dropped": false,
       "current_round": 8,
@@ -87,10 +87,10 @@
       "name": "Matt Tidd",
       "country": "CA",
       "wins": 3,
-      "losses": 4,
+      "losses": 5,
       "ties": 0,
       "points": 9,
-      "record": "3-4-0",
+      "record": "3-5-0",
       "placing": null,
       "dropped": false,
       "current_round": 8,
@@ -102,8 +102,23 @@
   ],
   "recent_changes": {
     "new_players": [],
-    "updated_records": [],
+    "updated_records": [
+      {
+        "name": "Dorian Kang",
+        "old_record": "3-4-0",
+        "new_record": "3-5-0",
+        "old_points": 9,
+        "new_points": 9
+      },
+      {
+        "name": "Matt Tidd",
+        "old_record": "3-4-0",
+        "new_record": "3-5-0",
+        "old_points": 9,
+        "new_points": 9
+      }
+    ],
     "rank_changes": [],
-    "timestamp": "2026-08-29T00:56:13.578357"
+    "timestamp": "2026-08-29T00:58:19.889717"
   }
 }
