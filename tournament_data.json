@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-08-29T00:52:15.397409",
+  "timestamp": "2026-08-29T00:54:14.937538",
   "source": "https://rk9.gg/pairings/WCS02wAQpCIaqFmXxER4",
   "mode": "html",
   "standings": [
     {
       "name": "Navjit Joshi",
       "country": "CA",
-      "wins": 6,
+      "wins": 7,
       "losses": 1,
       "ties": 0,
-      "points": 18,
-      "record": "6-1-0",
+      "points": 21,
+      "record": "7-1-0",
       "placing": null,
       "dropped": false,
       "current_round": 8,
@@ -102,8 +102,16 @@
   ],
   "recent_changes": {
     "new_players": [],
-    "updated_records": [],
+    "updated_records": [
+      {
+        "name": "Navjit Joshi",
+        "old_record": "6-1-0",
+        "new_record": "7-1-0",
+        "old_points": 18,
+        "new_points": 21
+      }
+    ],
     "rank_changes": [],
-    "timestamp": "2026-08-29T00:52:15.397318"
+    "timestamp": "2026-08-29T00:54:14.937402"
   }
 }
